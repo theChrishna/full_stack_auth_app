@@ -1,0 +1,1 @@
+# full_stack_auth_app
