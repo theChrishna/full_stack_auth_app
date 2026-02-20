@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center text-white">
+            <h1 class="display-3 fw-bold mb-4">Welcome to Auth App</h1>
+            <p class="lead mb-4">A secure Flask authentication system with user registration and login.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                <a href="/register" class="btn btn-light btn-lg px-5">Get Started</a>
+                <a href="/login" class="btn btn-outline-light btn-lg px-5">Login</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

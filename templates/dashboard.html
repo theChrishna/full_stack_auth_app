@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard - Flask Auth App{% endblock %}
+
+{% block body %}
+<div class="row justify-content-center mt-5">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-body p-5 text-center">
+                <h1 class="mb-4">🎉 Welcome, {{ user.name }}!</h1>
+                <p class="lead">You have successfully logged in to your dashboard.</p>
+                <hr class="my-4">
+                <p>This is a protected page that only authenticated users can access.</p>
+                <p><strong>Email:</strong> {{ user.email }}</p>
+                <a href="/logout" class="btn btn-outline-danger mt-3">Logout</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

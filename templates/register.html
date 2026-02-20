@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}Register - Flask Auth App{% endblock %}
+
+{% block body %}
+<div class="row justify-content-center mt-5">
+    <div class="col-md-6 col-lg-4">
+        <div class="card">
+            <div class="card-body p-5">
+                <h2 class="text-center mb-4">Register New Employee</h2>
+                <form method="POST" action="/register">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 mb-3">Register</button>
+                    <p class="text-center mb-0">Already have an account? <a href="/login">Login here</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
